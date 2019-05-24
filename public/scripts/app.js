@@ -27,6 +27,21 @@ var IndecisionApp = function (_React$Component) {
   }
 
   _createClass(IndecisionApp, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      console.log('componentDidMonut!');
+    }
+  }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate() {
+      console.log('componentDidUpdate!');
+    }
+  }, {
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
+      console.log('componentWillUnmount!');
+    }
+  }, {
     key: 'handleDeleteOptions',
     value: function handleDeleteOptions() {
       this.setState(function () {
@@ -157,9 +172,10 @@ var Option = function Option(props) {
     'div',
     null,
     React.createElement(
-      'p',
+      'span',
       null,
-      props.optionText
+      props.optionText,
+      '  '
     ),
     React.createElement(
       'button',
